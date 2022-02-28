@@ -33,4 +33,4 @@ con()
 app.use("/",(req,res)=>{
     res.send("<h1>Hello</h1>")
 })
-app.listen(4000,()=>console.log("4000"))
+app.listen(process.env.PORT,4000,()=>console.log("4000"))
